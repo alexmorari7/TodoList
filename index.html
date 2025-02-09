@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="app">
+        <h1>To-Do List</h1>
+        <div id="auth">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" id="registerUsername" placeholder="Username" required>
+                <input type="password" id="registerPassword" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div id="todoApp" style="display:none;">
+            <h2>Create To-Do</h2>
+            <form id="todoForm">
+                
+                <input type="text" id="todoTitle" placeholder="Title" required>
+                <textarea id="todoDescription" placeholder="Description"></textarea>
+                <label>Completion Status:</label><br>
+                    <input type="radio" id="yes" name="completed" value="true">YES                    
+                    <input type="radio" id="no" name="completed" value="false">NO
+                    
+                <button type="submit">Add To-Do</button>
+            </form>
+            <h2>Your To-Dos</h2>
+            <ul id="todoList"></ul>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
